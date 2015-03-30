@@ -1,0 +1,11 @@
+[push]
+	default = current
+[core]
+	autocrlf = false
+	excludesfile = ~/gitignore_global.txt
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+[color]
+	ui = true
+[diff]
+	tool = vimdiff
