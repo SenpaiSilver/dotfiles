@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo Scripted Message Of The Day
+date
+if which fortune  /dev/null; then
+	fortune
+fi
