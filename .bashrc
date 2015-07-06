@@ -41,3 +41,8 @@ shopt -s nocaseglob
 if [ -f ~/.motd ]; then
 	cat ~/.motd
 fi
+
+if [ -f ~/.smotd ]; then
+	. ~/.smotd
+fi
+
