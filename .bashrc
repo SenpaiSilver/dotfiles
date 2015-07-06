@@ -37,3 +37,7 @@ shopt -s extglob
 shopt -s histappend
 shopt -s hostcomplete
 shopt -s nocaseglob
+
+if [ -f ~/.motd ]; then
+	cat ~/.motd
+fi
