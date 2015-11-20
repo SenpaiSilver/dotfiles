@@ -15,3 +15,8 @@ set shiftwidth=2
 set tabstop=2
 set smartindent
 set cindent
+
+set scrolloff=3
+if &history < 1024
+	set history=1024
+endif
