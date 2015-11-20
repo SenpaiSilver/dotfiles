@@ -1,4 +1,5 @@
 " filetype plugin indent on    " required ?
+"set nocompatible
 
 call plug#begin('~/.vim/plugged')
 Plug 'vim-ruby/vim-ruby'
