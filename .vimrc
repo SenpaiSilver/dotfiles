@@ -1,6 +1,9 @@
 " filetype plugin indent on    " required ?
 "set nocompatible
 
+"Cygwin needs bs=2
+"set bs=2
+
 call plug#begin('~/.vim/plugged')
 Plug 'vim-ruby/vim-ruby'
 Plug 'pangloss/vim-javascript'
