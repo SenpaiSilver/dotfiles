@@ -6,6 +6,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # Prompt
+PROMPT_COMMAND='settitle "${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}"'
 PS1='\u:\W\$> '
 
 # Env definition
