@@ -13,5 +13,7 @@
 	ui = true
 [diff]
 	tool = vimdiff
+[difftool]
+	prompt = false
 [merge]
 	tool = vimdiff
