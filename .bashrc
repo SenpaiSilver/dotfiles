@@ -5,7 +5,16 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+function gi() {
+	curl -L -s https://www.gitignore.io/api/$@ ;
+}
+	
+function settitle() {
+	echo -ne "\033]0;$@\007"
+}
+
 # Prompt
+PROMPT_COMMAND='settitle "${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}"'
 PS1='\u:\W\$> '
 
 # Env definition
