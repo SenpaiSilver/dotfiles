@@ -9,12 +9,12 @@ fi
 echo Getting Plugged
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 	    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-echo Updating Plugs
-vim -c ":PlugUpdate" -c ":q" -c ":q"
 echo Installing files
 cp ./home/.vim/ \
 	./home/.vimrc \
 	./home/.bashrc \
 	./home/.gitconfig \
 	~/ -Rv
+echo Updating Plugs
+vim -c ":PlugUpdate" -c ":q" -c ":q"
 echo Done
