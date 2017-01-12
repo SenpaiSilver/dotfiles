@@ -5,8 +5,11 @@
 "set bs=2
 
 call plug#begin('~/.vim/plugged')
+
 Plug 'vim-ruby/vim-ruby'
 Plug 'pangloss/vim-javascript'
+Plug 'rust-lang/rust.vim'
+
 call plug#end()
 
 syntax on
