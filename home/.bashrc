@@ -4,6 +4,12 @@
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
+if [ -f /etc/bash_completion ]; then
+	. /etc/bash_completion
+fi
+if [ -f ~/.bash_profile ]; then
+	. ~/.bash_profile
+fi
 
 function gi() {
 	curl -L -s https://www.gitignore.io/api/$@ ;
@@ -46,12 +52,4 @@ shopt -s extglob
 shopt -s histappend
 shopt -s hostcomplete
 shopt -s nocaseglob
-
-if [ -f ~/.motd ]; then
-	cat ~/.motd
-fi
-
-if [ -f ~/.smotd ]; then
-	. ~/.smotd
-fi
 
