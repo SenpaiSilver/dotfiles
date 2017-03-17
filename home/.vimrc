@@ -7,6 +7,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'vim-ruby/vim-ruby'
 Plug 'pangloss/vim-javascript'
+Plug 'elzr/vim-json'
 call plug#end()
 
 syntax on
