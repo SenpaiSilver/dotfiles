@@ -9,11 +9,34 @@
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
+	co = checkout
+	ci = commit
+	cbranch = rev-parse --abbrev-ref HEAD
+	wave = log --decorate --graph --color --oneline
+	graph = log --decorate --graph --color
 [color]
+	diff = auto
+	status = auto
+	branch = auto
 	ui = true
+[color "status"]
+	header = white
+	added = green
+	changed = red
+	untracked = yellow
+	branch = bold white
+	nobranch = reverse magenta
+[color "branch"]
+	current = reverse green
+	local = white
+	remote = cyan
+	upstream = cyan
+	plain = reverse cyan
 [diff]
 	tool = vimdiff
 [difftool]
 	prompt = false
 [merge]
 	tool = vimdiff
+[log]
+	date = iso
