@@ -5,13 +5,6 @@ filetype plugin on
 "Cygwin needs bs=2
 "set bs=2
 
-" call plug#begin('~/.vim/plugged')
-" Plug 'vim-ruby/vim-ruby'
-" Plug 'pangloss/vim-javascript'
-" Plug 'elzr/vim-json'
-" Plug 'rust-lang/rust.vim'
-" call plug#end()
-
 syntax on
 set number
 set shiftwidth=2
@@ -32,6 +25,6 @@ if &history < 1024
     set history=1024
 endif
 
-if has("nvim") 
+if has("nvim")
     set inccommand=nosplit
 endif

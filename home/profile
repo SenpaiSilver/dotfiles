@@ -1,0 +1,7 @@
+export EDITOR='vim'
+export GIT_EDITOR=$EDITOR
+export SSH_ASKPASS=''
+export LESS="$LESS -R -Q"
+export PAGER='less'
+export WATCH='all'
+export PATH="$HOME/bin:$PATH"

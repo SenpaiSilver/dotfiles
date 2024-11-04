@@ -1,0 +1,31 @@
+alias j="jobs"
+alias prettyjson="python3 -m json.tool"
+alias ls='ls --color=auto -F'
+alias ll='ls -l  --color=auto -F'
+alias la='ls -la --color=auto -F'
+alias l='ls -CF'
+alias j='jobs'
+
+# Functions
+grepk() {
+    grep -ER \
+        --binary-files=without-match \
+        --exclude-dir=".webassets-cache" \
+        --exclude-dir=".git" \
+        --exclude-dir="venv" \
+        --exclude-dir="build" \
+        --exclude-dir="static" \
+        --exclude-dir="site-packages" \
+        --exclude-dir="gen"  \
+        --exclude-dir=".mypy_cache" \
+        --exclude-dir="__snapshots__" \
+        --exclude-dir="dist" \
+        --exclude-dir="cypress" \
+        --exclude-dir="node_modules" \
+        --exclude="tslint.json" \
+        --exclude="*.min.js" \
+        --exclude="*.pyc" \
+        --exclude="*.swp" \
+        --exclude="*~" \
+        "$*" .
+}
