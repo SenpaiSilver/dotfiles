@@ -3,7 +3,7 @@
 echo Checking for curl
 if ! which curl > /dev/null; then
 	echo You need curl
-	sudo apt-get install curl -y
+	sudo apt-get install curl wget vim -y
 fi
 
 echo Getting Plugged
